@@ -22,15 +22,26 @@ class VC1: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        
+        // nhận dữ liệu sau khi nhập mật khẩu "KeySendData"
+        NotificationCenter.default.addObserver(self, selector: #selector(handleNotification(_:)), name: NSNotification.Name.init(rawValue: "KeySendData"), object: nil)
     }
-    */
-
+    
+    // xử lý dữ liệu
+    func handleNotification(_ notification: Notification) {
+        
+        guard let dict = notification.userInfo else { return }
+        
+        guard let value = dict["name"] as? String else { return }
+        
+        nameLabel.text = value
+        
+    }
+    
+    // khi sử dụng notification để truyền dữ liệu thì sau khi sử dụng deinit đi.
+    deinit {
+        NotificationCenter.default.removeObserver(self, name: NSNotification.Name.init(rawValue: "KeySendData"), object: nil)
+    }
 }
