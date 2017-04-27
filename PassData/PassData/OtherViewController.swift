@@ -29,11 +29,7 @@ class OtherViewController: UIViewController {
     @IBAction func sendData(_ sender: UIBarButtonItem) {
         
         // truyễn dữ liệu
-        if let closure = closure {
-            
-            closure(nameTextField.text ?? "")
-            
-        }
+        closure?(nameTextField.text ?? "")
         
         _ = navigationController?.popViewController(animated: true)
         
