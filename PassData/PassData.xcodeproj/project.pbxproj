@@ -14,6 +14,7 @@
 		3BE6A8981EB17DD1007397E6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3BE6A8961EB17DD1007397E6 /* LaunchScreen.storyboard */; };
 		3BE6A8A31EB17DD1007397E6 /* PassDataTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BE6A8A21EB17DD1007397E6 /* PassDataTests.swift */; };
 		3BE6A8AE1EB17DD1007397E6 /* PassDataUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BE6A8AD1EB17DD1007397E6 /* PassDataUITests.swift */; };
+		3BE6A8C41EB18CF9007397E6 /* OtherViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BE6A8C31EB18CF9007397E6 /* OtherViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,7 @@
 		3BE6A8A91EB17DD1007397E6 /* PassDataUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PassDataUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3BE6A8AD1EB17DD1007397E6 /* PassDataUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PassDataUITests.swift; sourceTree = "<group>"; };
 		3BE6A8AF1EB17DD1007397E6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3BE6A8C31EB18CF9007397E6 /* OtherViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OtherViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +101,7 @@
 			children = (
 				3BE6A88D1EB17DD1007397E6 /* AppDelegate.swift */,
 				3BE6A88F1EB17DD1007397E6 /* ViewController.swift */,
+				3BE6A8C31EB18CF9007397E6 /* OtherViewController.swift */,
 				3BE6A8911EB17DD1007397E6 /* Main.storyboard */,
 				3BE6A8941EB17DD1007397E6 /* Assets.xcassets */,
 				3BE6A8961EB17DD1007397E6 /* LaunchScreen.storyboard */,
@@ -260,6 +263,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3BE6A8901EB17DD1007397E6 /* ViewController.swift in Sources */,
+				3BE6A8C41EB18CF9007397E6 /* OtherViewController.swift in Sources */,
 				3BE6A88E1EB17DD1007397E6 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -505,6 +509,7 @@
 				3BE6A8B41EB17DD1007397E6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		3BE6A8B51EB17DD1007397E6 /* Build configuration list for PBXNativeTarget "PassDataTests" */ = {
 			isa = XCConfigurationList;
@@ -513,6 +518,7 @@
 				3BE6A8B71EB17DD1007397E6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		3BE6A8B81EB17DD1007397E6 /* Build configuration list for PBXNativeTarget "PassDataUITests" */ = {
 			isa = XCConfigurationList;
@@ -521,6 +527,7 @@
 				3BE6A8BA1EB17DD1007397E6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
