@@ -10,6 +10,7 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var nameLabel: UILabel!
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
@@ -20,6 +21,15 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
-
+    // khởi tạo func unwind bên VC nhận dữ liệu
+    // kiểm tra kết nối otherVC với func unwindAndPassData
+    // truyển dữ liệu
+    @IBAction func unwindAndPassData(sender: UIStoryboardSegue) {
+        
+        let otherVC = sender.source as? OtherViewController
+        
+        nameLabel.text = otherVC?.nameTextField.text
+        
+    }
 }
 
