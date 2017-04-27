@@ -21,6 +21,17 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
-
+    // kết nối giữa 2 vc
+    // ủy quyền delegate từ OtherVC sang VC
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        let otherVC = segue.destination as? OtherViewController
+        otherVC?.delegate = self
+    }
 }
 
+// xử lý dữ liệu từ protocol
+extension ViewController: OtherViewControllerDelegate {
+    func passedData(name: String) {
+        nameLabel.text = name
+    }
+}
